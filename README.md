@@ -3,8 +3,6 @@
 
 ISSAI Playground is a Python-based framework that integrates Oylan 2 API, MangiSoz (SoyleTTS, SoyleSTT), Beynele Text-to-Image, and other services. With this platform, you can easily build Telegram bots, voice assistants, and multimodal AI solutions.
 
-> **Note:** This project is based on the repository [oylan-assistant](https://github.com/dauitsuragan002/oylan-assistant).
-
 ## Quick Start
 
 ### Requirements
