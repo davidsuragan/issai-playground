@@ -52,7 +52,7 @@ ASSISTANT_ID = 'your_assistant_id'
   - `soyle/transcription.py` — speech-to-text
 
 ## Soyle TTS:
------
+
 - `soyle/tts.py` — text-to-speech
 <table>
 <tr>
@@ -80,7 +80,7 @@ ASSISTANT_ID = 'your_assistant_id'
 </tr>
 </table>
 
-##Image generation:
+## Image generation:
 -`beynele/beynele.py` — text-to-image
 <p align="center">
   <img src="beynele/generated_images/BayterekmonumentinAstanacyberp_1.png" alt="Bayterek in Cyberpunk Style" width="400"/>
