@@ -99,7 +99,6 @@ ASSISTANT_ID = 'your_assistant_id'
   - 📄 Script: `ocr/ocr.py` — image-to-text converter
   Extracts text from an uploaded image using the Mangisoz OCR API.
   ```python
-  Example output:
   🔍 OCR Result:
   {'text': 'дәуіт\nсұраған', 'audio': '', 'uid': '5f6fc063-885a-4b6a-8256-2dd739983db8.png'}
   ```
