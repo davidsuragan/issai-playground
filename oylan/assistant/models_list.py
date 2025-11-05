@@ -1,11 +1,11 @@
 import requests
 
-from config import *
+from ..config import *
 
 def get_available_models():
     url = f"{URL_OYLAN}assistant/models/"
     headers = {
-        "Authorization": f"Api-Key {API_KEY}",
+        "Authorization": f"Api-Key {API_OYLAN}",
         "accept": "application/json"
     }
     response = requests.get(url, headers=headers)

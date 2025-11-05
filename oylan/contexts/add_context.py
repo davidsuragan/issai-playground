@@ -1,9 +1,9 @@
 import requests, os
-from ..config import URL_OYLAN, API_KEY, ASSISTANT_ID
+from ..config import URL_OYLAN, API_OYLAN, ASSISTANT_ID
 
 # Configuration for the request headers
 HEADERS = {
-    "Authorization": f"Api-Key {API_KEY}",
+    "Authorization": f"Api-Key {API_OYLAN}",
     "accept": "application/json"
 }
 

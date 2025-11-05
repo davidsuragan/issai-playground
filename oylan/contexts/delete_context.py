@@ -1,5 +1,5 @@
 import requests
-from ..config import URL_OYLAN, API_KEY, ASSISTANT_ID
+from ..config import URL_OYLAN, API_OYLAN, ASSISTANT_ID
 
 def delete_context(assistant_id, context_id):
     """
@@ -11,7 +11,7 @@ def delete_context(assistant_id, context_id):
     url = f"{URL_OYLAN}assistant/{assistant_id}/contexts/{context_id}/"
     headers = {
         "accept": "application/json",
-        "Authorization": f"Api-Key {API_KEY}"
+        "Authorization": f"Api-Key {API_OYLAN}"
     }
     response = requests.delete(url, headers=headers)
     if response.status_code == 204:

@@ -1,5 +1,5 @@
 import requests
-from ..config import URL_OYLAN, API_KEY
+from ..config import URL_OYLAN, API_OYLAN
 
 # Function to update an assistant fully or partially
 def update_assistant_full(
@@ -19,7 +19,7 @@ def update_assistant_full(
     headers = {
         "accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": f"Api-Key {API_KEY}"
+        "Authorization": f"Api-Key {API_OYLAN}"
     }
     data = {
         "name": name,
@@ -50,7 +50,7 @@ def update_assistant_partial(assistant_id, **kwargs):
     headers = {
         "accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": f"Api-Key {API_KEY}"
+        "Authorization": f"Api-Key {API_OYLAN}"
     }
     data = kwargs
 

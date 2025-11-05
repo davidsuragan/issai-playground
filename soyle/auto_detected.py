@@ -1,6 +1,6 @@
 import requests
 
-from config import API_MAIN_SOYLE  # Import all configurations like API_KEY, URL_OYLAN, ASSISTANT_ID
+from config import API_MAIN  # Import all configurations like API_KEY, URL_OYLAN, ASSISTANT_ID
 
 def autodetect_language(text, api_key):
     """
@@ -26,5 +26,5 @@ def autodetect_language(text, api_key):
         print(f"Error: {response.status_code}, {response.text}")
         return None
 
-detected_language = autodetect_language("Сәлем, әлем!", api_key=API_MAIN_SOYLE)
+detected_language = autodetect_language("Сәлем, әлем!", api_key=API_MAIN)
 print(f"Detected language: {detected_language}")

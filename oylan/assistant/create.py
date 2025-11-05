@@ -1,6 +1,6 @@
 import requests
 
-from ..config import URL_OYLAN, API_KEY
+from ..config import URL_OYLAN, API_OYLAN
 
 # Function to create a new assistant
 def create_assistant(
@@ -16,7 +16,7 @@ def create_assistant(
     headers = {
         "accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": f"Api-Key {API_KEY}" 
+        "Authorization": f"Api-Key {API_OYLAN}" 
     }
     data = {
         "name": name,

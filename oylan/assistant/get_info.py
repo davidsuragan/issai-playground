@@ -1,11 +1,11 @@
 import requests
 
-from ..config import URL_OYLAN, API_KEY 
+from ..config import URL_OYLAN, API_OYLAN 
 
 # Function to check for existing assistants or create a new one
 def check_or_create_assistant():
     headers = {
-        "Authorization": f"Api-Key {API_KEY}",
+        "Authorization": f"Api-Key {API_OYLAN}",
         "accept": "application/json"
     }
 
@@ -29,7 +29,7 @@ def check_or_create_assistant():
 
 def get_assistant_name_by_id(assistant_id):
     headers = {
-        "Authorization": f"Api-Key {API_KEY}",
+        "Authorization": f"Api-Key {API_OYLAN}",
         "accept": "application/json"
     }
     url = f"{URL_OYLAN}assistant"  # Барлық ассистенттер тізімі

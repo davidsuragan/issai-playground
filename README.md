@@ -19,15 +19,13 @@ pip install -r requirements.txt
 1. Create a `.env` file and add your API keys:
 
 ```env
-TOKEN=<Telegram Bot Token>
-API_RESPONSE=<Oylan API Key>
+API_OYLAN=<Oylan API Key>
 API_SOYLE=<Soyle API Key>
-API_MAIN_SOYLE=<accessToken>
-API_MAIN_BEYNELE=<accessToken>
+API_MAIN=<accessToken>
 ```
 
 > **How to get `accessToken`:**
-> 1. Go to https://mangisoz.nu.edu.kz/soyle or https://beynele.nu.edu.kz/beynele
+> 1. Go to https://mangisoz.nu.edu.kz/soyle or https://beynele.nu.edu.kz/beynele, https://oylan.nu.edu.kz/oylan
 > 2. Press F12 → Application → Cookies → Copy the value of `accessToken`
 
 2. Configure your assistant in `config.py`:
@@ -91,11 +89,24 @@ ASSISTANT_ID = 'your_assistant_id'
 
 <p align="center"><i>Bayterek monument in Astana, cyberpunk style</i></p>
 
-  - `beynele/beynele.py` — text-to-image
+  - 📄 Script:`beynele/beynele.py` — text-to-image
+
+- **OCR (Optical Character Recognition)**
+<p align="center"> <img src="ocr/example.png" alt="OCR Example Result" width="400"/> </p> 
+
+<p align="center"><i>Text recognition example</i></p>
+
+  - 📄 Script: `ocr/ocr.py` — image-to-text converter
+  Extracts text from an uploaded image using the Mangisoz OCR API.
+  ```python
+  Example output:
+  🔍 OCR Result:
+  {'text': 'дәуіт\nсұраған', 'audio': '', 'uid': '5f6fc063-885a-4b6a-8256-2dd739983db8.png'}
+  ```
 
 ## Contact
 
-- https://t.me/david667s
+- https://t.me/dake_dev
 - https://t.me/davidsuragan
 
 ## Credits
@@ -104,5 +115,4 @@ ASSISTANT_ID = 'your_assistant_id'
 - https://beynele.nu.edu.kz/login
 
 ## License
-
 MIT License
